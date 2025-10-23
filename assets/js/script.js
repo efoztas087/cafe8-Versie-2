@@ -141,3 +141,45 @@ function updateMenuHeader(category) {
 }
 
 loadMenu();
+
+// --- Contactformulier functionaliteit (zoals in app.js) ---
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData
+        });
+        const result = await response.json();
+
+        const messageBox = document.createElement('p');
+        messageBox.style.marginTop = '15px';
+        messageBox.style.padding = '10px';
+        messageBox.style.borderRadius = '5px';
+        messageBox.style.textAlign = 'center';
+
+        if (result.success) {
+          messageBox.textContent = result.success;
+          messageBox.style.backgroundColor = '#d4edda';
+          messageBox.style.color = '#155724';
+          contactForm.reset();
+        } else {
+          messageBox.textContent = result.error || 'Er ging iets mis. Probeer opnieuw.';
+          messageBox.style.backgroundColor = '#f8d7da';
+          messageBox.style.color = '#721c24';
+        }
+
+        const oldMsg = contactForm.querySelector('p');
+        if (oldMsg) oldMsg.remove();
+        contactForm.appendChild(messageBox);
+      } catch (err) {
+        console.error('Fout bij verzenden formulier:', err);
+      }
+    });
+  }
+});
