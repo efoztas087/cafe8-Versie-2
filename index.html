@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café8</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#">Café8</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#passie">Over ons</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#webshop">Webshop</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Sectie -->
+  <section class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <p class="hero-subtitle">Jouw koffiespot in Haarlem</p>
+      <h1 class="hero-title">Specialty koffie, matcha &<br>sweets to go</h1>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-outline">Bekijk ons menu</a>
+        <a href="#contact" class="btn btn-outline">Vind ons in Haarlem</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tekst Slider -->
+  <section class="text-slider-section">
+    <div class="text-slider">
+      <span>Van espresso tot iced latte – altijd to go, altijd Café8.</span>
+      <span>Matcha of cappuccino – jouw momentje bij Café8.</span>
+      <span>Altijd vers, altijd met een glimlach.</span>
+    </div>
+  </section>
+
+  <!-- Passie Sectie -->
+  <section id="passie" class="section-light">
+    <div class="container passie-container">
+      <h2>Onze passie voor koffie</h2>
+      <p>
+        Wij geloven dat een kop koffie meer is dan een drankje. Het is een moment van rust, een glimlach van onze barista en soms zelfs het begin van een goed gesprek. 
+        Dat gevoel willen we bij Café8 overbrengen.
+      </p>
+      <a href="#contact" class="btn btn-green">Kom langs</a>
+    </div>
+  </section>
+
+  <!-- Menu & Geniet Sectie -->
+  <section id="menu" class="menu-hero-section">
+    <div class="menu-hero-overlay"></div>
+    <div class="menu-hero-content">
+      <h2>Drankjes</h2>
+      <p>Koffie, matcha en kleurrijke specials</p>
+        <a href="menu.html" class="btn btn-outline">Ontdek ons aanbod</a>
+      <div id="menu-grid">
+        <!-- Wordt via JS gevuld -->
+      </div>
+      <h3>Geniet</h3>
+      <p>Een vrolijke break in je dag</p>
+      <p>
+        Bij Café8 gaat het om meer dan koffie alleen. Onze pop-art vibe en homemade sweets zorgen voor een momentje plezier, 
+        of je nu blijft zitten of je koffie meeneemt voor onderweg.
+      </p>
+      <a href="menu.html" class="btn btn-outline">Ontdek ons aanbod</a>
+    </div>
+  </section>
+
+  <!-- Locatie Sectie -->
+  <section id="locatie" class="location-section">
+    <h2>Kom langs voor een koffie to go</h2>
+    <div class="location-wrapper">
+      <div class="location-box">
+        <h3>Adres</h3>
+        <p>Generaal Cronjéstraat 3A</p>
+        <p>2021 JA Haarlem</p>
+      </div>
+      <div class="location-box">
+        <h3>Openingstijden</h3>
+        <p>Maandag - Vrijdag: 07:00 - 19:00</p>
+        <p>Zaterdag en Zondag: 09:00 - 19:00</p>
+      </div>
+    </div>
+
+    <div class="location-gallery">
+      <img src="assets/img/croissant.jpg" alt="Croissant">
+      <img src="assets/img/milkshake.jpg" alt="Milkshake">
+      <img src="assets/img/toast.jpg" alt="Tosti">
+      <img src="assets/img/caramel.jpg" alt="Koffie">
+      <img src="assets/img/cookies.jpg" alt="Cookies">
+    </div>
+  </section>
+
+  <!-- Contact Sectie -->
+   <section id="contact" class="contact-section">
+      <div class="contact-left">
+        <form id="contact-form" method="POST" action="php/contact.php">
+          <label for="voornaam">Voornaam *</label>
+          <input type="text" id="voornaam" name="voornaam" required>
+
+          <label for="achternaam">Achternaam *</label>
+          <input type="text" id="achternaam" name="achternaam" required>
+
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="telefoon">Telefoon</label>
+          <input type="tel" id="telefoon" name="telefoon">
+
+          <label for="bericht">Lang antwoord *</label>
+          <textarea id="bericht" name="bericht" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-outline-light">Verzenden</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p><a href="mailto:info@cafe8.nl">info@cafe8.nl</a></p>
+          <p>Generaal Cronjéstraat 3A<br>2021 JA Haarlem</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/cafe8_nl/" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@cafe8.nl?lang=nl-NL" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.783504292004!2d4.638221877302364!3d52.392474872027876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ef01cde9c6ab%3A0x955f2ffd1d0a1d7c!2zQ2Fmw6k4!5e0!3m2!1snl!2snl!4v1761135299387!5m2!1snl!2snl"
+            width="450"
+            height="300"
+            style="border:0; border-radius:10px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Café8. Alle rechten voorbehouden.
+      </p>
+    </div>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+<style>
+</style>

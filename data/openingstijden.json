@@ -1,0 +1,11 @@
+
+
+[
+  { "dag": "Maandag", "open": "08:00", "sluit": "19:00" },
+  { "dag": "Dinsdag", "open": "08:00", "sluit": "19:00" },
+  { "dag": "Woensdag", "open": "08:00", "sluit": "19:00" },
+  { "dag": "Donderdag", "open": "08:00", "sluit": "19:00" },
+  { "dag": "Vrijdag", "open": "08:00", "sluit": "19:00" },
+  { "dag": "Zaterdag", "open": "08:00", "sluit": "19:00" },
+  { "dag": "Zondag", "open": "08:00", "sluit": "19:00" }
+]

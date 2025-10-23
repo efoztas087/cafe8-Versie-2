@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café8</title>
+  <link rel="stylesheet" href="assets/css/menu.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+    <a href="index.html" class="brand">Café8</a>
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Over ons</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Webshop</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu-hero" id="menu">
+      <div class="container">
+        <p class="eyebrow">Op de kaart</p>
+        <h1>Ons menu is met liefde samengesteld.</h1>
+        <p class="lead">
+          Van romige koffies en frisse matcha tot huisgemaakte zoetigheden en
+          hartige panini's: een tosti is altijd vers belegd en met een glimlach geserveerd.
+        </p>
+      </div>
+    </section>
+
+    <section class="menu-tabs" aria-labelledby="menu">
+      <div class="container">
+        <div class="tabs" id="menu-tabs" role="tablist"></div>
+      </div>
+    </section>
+
+    <section id="menu-header" class="menu-header">
+      <div class="container">
+        <h2 class="menu-title"></h2>
+        <p class="menu-description"></p>
+      </div>
+    </section>
+
+    <section class="menu-sections" aria-live="polite">
+      <div class="container" id="menu-sections"></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-left">
+        <form id="contact-form" method="POST" action="php/contact.php">
+          <label for="voornaam">Voornaam *</label>
+          <input type="text" id="voornaam" name="voornaam" required>
+
+          <label for="achternaam">Achternaam *</label>
+          <input type="text" id="achternaam" name="achternaam" required>
+
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="telefoon">Telefoon</label>
+          <input type="tel" id="telefoon" name="telefoon">
+
+          <label for="bericht">Lang antwoord *</label>
+          <textarea id="bericht" name="bericht" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-outline-light">Verzenden</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p><a href="mailto:info@cafe8.nl">info@cafe8.nl</a></p>
+          <p>Generaal Cronjéstraat 3A<br>2021 JA Haarlem</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/cafe8_nl/" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@cafe8.nl?lang=nl-NL" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.783504292004!2d4.638221877302364!3d52.392474872027876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ef01cde9c6ab%3A0x955f2ffd1d0a1d7c!2zQ2Fmw6k4!5e0!3m2!1snl!2snl!4v1761135299387!5m2!1snl!2snl"
+            width="450"
+            height="300"
+            style="border:0; border-radius:10px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Café8. Alle rechten voorbehouden.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/css/js/script.js" defer></script>
+</body>
+</html>

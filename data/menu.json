@@ -1,0 +1,394 @@
+{
+  "categories": [
+    {
+      "id": "warme-dranken",
+      "label": "Warme Dranken",
+      "description": "Onze selectie warme dranken, pure kwaliteit, smaakvol en altijd vers geserveerd.",
+      "groups": [
+        {
+          "title": "Koffie Specials",
+          "description": "Bijzondere koffies met net dat beetje extra smaak en beleving.",
+          "items": [
+            {
+              "name": "Espresso",
+              "description": "Stevige shot pure koffie",
+              "price": "\u20ac 2,50"
+            },
+            {
+              "name": "Americano",
+              "description": "Espresso aangevuld met heet water",
+              "price": "\u20ac 2,95"
+            },
+            {
+              "name": "Cappuccino",
+              "description": "Espresso met romige melkschuim",
+              "price": "\u20ac 3,20"
+            },
+            {
+              "name": "Flat White",
+              "description": "Dubbele espresso met fluweelzachte melk",
+              "price": "\u20ac 3,60"
+            },
+            {
+              "name": "Café Latte",
+              "description": "Zachte latte met lichte schuimlaag",
+              "price": "\u20ac 3,40"
+            },
+            {
+              "name": "Espresso Macchiato",
+              "description": "Espresso met een vleugje melkschuim",
+              "price": "\u20ac 2,95"
+            }
+          ]
+        },
+        {
+          "title": "Theeselectie",
+          "description": "Ontdek ons assortiment van klassieke en bijzondere theesmaken.",
+          "items": [
+            {
+              "name": "Klassieke Thee",
+              "description": "Geselecteerd met een frisse toets van kruiden",
+              "price": "\u20ac 3,50"
+            },
+            {
+              "name": "Gemberthee",
+              "description": "Heet geserveerd met verse gember",
+              "price": "\u20ac 3,55"
+            },
+            {
+              "name": "Gemberthee met een schijfje citroen",
+              "description": "Gemberthee met een extra citrus accent",
+              "price": "\u20ac 3,65"
+            },
+            {
+              "name": "Gemberthee met een schijfje sinasappel",
+              "description": "Gemberthee met een extra citrus accent",
+              "price": "\u20ac 3,65"
+            },
+            {
+              "name": "Muntthee",
+              "description": "Verse munt met een schijfje sinaasappel",
+              "price": "\u20ac 3,55"
+            }
+          ]
+        },
+        {
+          "title": "Overige Specials",
+          "description": "Ontdek onze warme specials, van kruidige chai tot romige chocolademelk. Perfect om op te warmen.",
+          "items": [
+            {
+              "name": "Chai Latte",
+              "description": "Kruidige thee met kaneel, gember en kardemom, geserveerd met melk",
+              "price": "\u20ac 4,10"
+            },
+            {
+              "name": "Dirty Chai Latte",
+              "description": "Een shot espresso met chai en opgeschuimde melk",
+              "price": "\u20ac 4,30"
+            },
+            {
+              "name": "Warme Chocolademelk",
+              "description": "Gemaakt van echte chocolade, afgetopt met slagroom",
+              "price": "\u20ac 4,50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matcha-menu",
+      "label": "Matcha Menu",
+      "description": "Ontdek ons Matcha Menu, gemaakt met premium Yoisho matcha. Fris, zacht en vol natuurlijke energie.",
+      "groups": [
+        {
+          "title": "Iced Matcha",
+          "description": "Verfrissende Japanse matcha met romige melk en ijs, perfect voor een energieboost.",
+          "items": [
+            {
+              "name": "Iced Matcha",
+              "description": "Verfrissende Japanse matcha met romige melk en ijs, perfect voor een energieboost.",
+              "price": "€ 5,95"
+            },
+            {
+              "name": "Klassieke Matcha Latte",
+              "description": "Japanse matcha van hoge kwaliteit met romige melk.",
+              "price": "€ 5,95"
+            },
+            {
+              "name": "Vanille Matcha Latte",
+              "description": "Met een vleugje vanille.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Aardbei Matcha Latte",
+              "description": "Met de zomerse smaak van aardbei.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Mango Matcha Latte",
+              "description": "Exotisch en verfrissend met een tropische mango-twist.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Witte Chocolade Matcha Latte",
+              "description": "Met de delicate smaak van witte chocolade.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Passievrucht Matcha Latte",
+              "description": "Friszuur en tropisch.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Blauwe Bes Matcha Latte",
+              "description": "Verrijkt met de volle, natuurlijke smaak van blauwe bessen.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Kersen Matcha Latte",
+              "description": "Met een fruitig kersenaccent.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Watermeloen Matcha Latte",
+              "description": "Licht en dorstlessend, met een vleugje zoete watermeloen.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Speculoos Matcha Latte",
+              "description": "Gecombineerd met de kruidige zoetheid van speculoos.",
+              "price": "€ 6,95"
+            },
+            {
+              "name": "Matcha Café8 Pink",
+              "description": "Een kleurrijke creatie met matcha en dragon fruit.",
+              "price": "€ 8,00"
+            },
+            {
+              "name": "Matcha Café8 Blue",
+              "description": "Met butterfly pea flower.",
+              "price": "€ 8,00"
+            },
+            {
+              "name": "Matcha Pink Cloud",
+              "description": "Een klassieke matcha latte met een luchtige topping van aardbeienfoam.",
+              "price": "€ 8,00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gebak-koekjes",
+      "label": "Gebak & Koekjes",
+      "description": "Een selectie zoete lekkernijen, perfect bij de koffie of gewoon om jezelf te verwennen.",
+      "groups": [
+        {
+          "title": "Zoete Specials",
+          "description": "Heerlijke zoetigheden, van romige cheesecakes tot luchtige muffins en verse cookies.",
+          "items": [
+            {
+              "name": "Pecan Cheesecake",
+              "description": "Vol en nootachtig van smaak.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Lemon Cheesecake",
+              "description": "Met een zachte citroentoets.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Cacao Cheesecake",
+              "description": "Intens en rijk, voor de echte chocolade-liefhebber.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Lemon Cake",
+              "description": "Luchtige cake met frisse citroen.",
+              "price": "€ 2,75"
+            },
+            {
+              "name": "Carrot Cake",
+              "description": "Wortelcake met een vleugje kaneel, afgewerkt met een zachte topping.",
+              "price": "€ 2,75"
+            },
+            {
+              "name": "Homemade Matcha Cookies met Witte Chocolade",
+              "description": "Een unieke combinatie van matcha en witte chocolade, huisgemaakt met liefde.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Homemade Cookies",
+              "description": "Dagelijks versgebakken koekjes, steeds met een verassende twist.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Cookie Vanille",
+              "description": "Met een vleugje vanille.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Appel-Kruimel Muffin",
+              "description": "Rijk gevuld met appel en een krokante kruimellaag erbovenop.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Chocolade Muffin",
+              "description": "Zacht en vol van smaak.",
+              "price": "€ 3,00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warme-broodjes",
+      "label": "Warme Broodjes",
+      "description": "Ambachtelijk bereid en geserveerd met een vleugje flair.",
+      "groups": [
+        {
+          "title": "Panini’s, Tosti’s & Meer",
+          "description": "Vers belegde panini’s, knapperige tosti’s en heerlijke croissants.",
+          "items": [
+            {
+              "name": "Panini Mozzarella, Tomaat & Pesto",
+              "description": "Gesmolten mozzarella, sappige tomaat en frisse pesto.",
+              "price": "€ 7,00"
+            },
+            {
+              "name": "Panini Kip & Kaas",
+              "description": "Gevuld met malse kip en kaas.",
+              "price": "€ 7,00"
+            },
+            {
+              "name": "Tosti Kaas",
+              "description": "Gegrild Turks brood gevuld met kaas.",
+              "price": "€ 3,90"
+            },
+            {
+              "name": "Tosti Kaas & Sucuk",
+              "description": "Knapperig Turks brood met gesmolten kaas en sucukworst.",
+              "price": "€ 4,50"
+            },
+            {
+              "name": "Croissant Naturel",
+              "description": "Luchtig en boterzacht, vers uit de oven.",
+              "price": "€ 2,80"
+            },
+            {
+              "name": "Croissant Chocolade",
+              "description": "Verrukkelijk gevuld met romige chocolade.",
+              "price": "€ 3,00"
+            },
+            {
+              "name": "Croissant Kaas",
+              "description": "Franse klassieker, rijkelijk bestrooid met kaas.",
+              "price": "€ 3,25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iced-latte-specials",
+      "label": "Iced Latte Specials",
+      "description": "Verfrissende koffiespecials op ijs, romig, koel en in verschillende smaken verkrijgbaar.",
+      "groups": [
+        {
+          "title": "Iced Latte",
+          "description": "Espresso met koud melk, geserveerd over ijs",
+          "items": [
+            {
+              "name": "Iced Latte",
+              "description": "Espresso met koude melk, geserveerd over ijs.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Vanille",
+              "description": "Zacht en romig met een vleugje zoete vanille.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Aardbei",
+              "description": "Verfrissend en lichtzoet met een fruitige twist van aardbei.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Karamel",
+              "description": "Afgewerkt met de smaak van karamel.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Hazelnoot",
+              "description": "Een volle, nootachtige smaak die perfect samengaat met espresso.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Witte Chocolade",
+              "description": "Met de zachte smaak van witte chocolade.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Pumpkin Spice",
+              "description": "Kruidig en verwarmend, met kaneel en nootmuskaat, maar dan ijskoud.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Speculoos",
+              "description": "Met de herkenbare smaak van speculooskoekjes.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Pistache",
+              "description": "Volle smaak van pistache.",
+              "price": "€ 4,20"
+            },
+            {
+              "name": "Iced Latte Kersen",
+              "description": "Fruitige kersensmaak.",
+              "price": "€ 4,20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Kids menu",
+      "label": "Kids Menu",
+      "description": "Heerlijke drankjes speciaal voor de kleintjes.",
+      "groups": [
+        { 
+          "title": "Voor de kleintjes",
+          "description": "Een menu met milde drankjes",
+          "items": [
+            {
+              "name": "Chocomelk",
+              "description": "Warme chocolademelk",
+              "price": "\u20ac 3,50"
+            },
+            {
+              "name": "Perensap",
+              "description": "Zacht en zoet",
+              "price": "\u20ac 2,50"
+            },
+            {
+              "name": "Appelsap",
+              "description": "Verfrissend en fruitig sap van appels",
+              "price": "\u20ac 2,50"
+            },
+            {
+              "name": "Babycino",
+              "description": "Een klein kopje gestoomde melk met melkscuim",
+              "price": "\u20ac 1,50"
+            },
+            {
+              "name": "Limonade",
+              "description": "Klassieke dorstlesser",
+              "price": "\u20ac 3,40"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
