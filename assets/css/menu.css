@@ -65,7 +65,7 @@ header.site-header {
   letter-spacing: 0.5px;
 }
 
-.header-container .brand{
+.header-container .brand a{
   font-family: var(--font-serif);
   font-weight: 700;
   font-size: 1.9rem;
