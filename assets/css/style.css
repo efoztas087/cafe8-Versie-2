@@ -472,44 +472,37 @@ p { animation-delay: 0.5s; }
 .contact-info { animation-delay: 0.4s; }
 .contact-left form { animation-delay: 0.5s; }
 
-/* === Smooth tekstwissel voor slogansectie === */
+/* === Smooth tekstwissel voor text-slider-sectie === */
 .text-slider-section {
   background-color: #232822;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
   overflow: hidden;
   position: relative;
 }
 
-.text-slider span {
+.text-slider {
+  position: relative;
   display: inline-block;
+  min-height: 2.5rem; /* vaste hoogte om springen te voorkomen */
+}
+
+.text-slider span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: block;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #fff;
   opacity: 0;
-  transition: opacity 1.5s ease;
+  transition: opacity 1s ease-in-out;
+  white-space: nowrap;
 }
 
 .text-slider span.visible {
   opacity: 1;
-}
-
-/* Zorg dat elke zin een eigen startmoment heeft */
-.text-slider span:nth-child(1) {
-  animation-delay: 0s;
-}
-.text-slider span:nth-child(2) {
-  animation-delay: 6s;
-}
-.text-slider span:nth-child(3) {
-  animation-delay: 12s;
-}
-
-/* Verbeterde fade-animatie */
-@keyframes fadeInOut {
-  0%, 8% { opacity: 0; transform: translateY(20px); }
-  10%, 30% { opacity: 1; transform: translateY(0); }
-  33%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 
 /* === Footer Sectie === */
