@@ -483,9 +483,6 @@ p { animation-delay: 0.5s; }
 
 .text-slider span {
   display: inline-block;
-  opacity: 0;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   color: #fff;
