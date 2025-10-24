@@ -60,7 +60,7 @@ header.site-header {
   font-family: var(--font-serif1);
   font-size: 1.8rem;
   text-decoration: none;
-  color: #23231f;
+  color: #000000;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
