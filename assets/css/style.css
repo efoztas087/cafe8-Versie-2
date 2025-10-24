@@ -499,12 +499,14 @@ p { animation-delay: 0.5s; }
   transform: translate(-50%, -50%);
   display: block;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem; /* kleiner voor betere pasvorm */
+  font-size: clamp(0.85rem, 3vw, 1.1rem); /* past zich aan schermgrootte aan */
   color: #fff;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  white-space: normal;
-  max-width: 85vw;
+  white-space: nowrap; /* alles op één regel */
+  overflow: hidden;
+  text-overflow: ellipsis; /* voorkomt overlopen */
+  max-width: 90vw; /* blijft binnen viewport */
   text-align: center;
   line-height: 1.4;
   padding: 0 10px;
