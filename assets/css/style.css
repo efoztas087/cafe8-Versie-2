@@ -491,29 +491,34 @@ p { animation-delay: 0.5s; }
   overflow: hidden;   /* voorkom horizontaal scrollen */
 }
 
+/* === Verbeterde text-slider span voor mobiele leesbaarheid === */
 .text-slider span {
   position: absolute;
   left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: block;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #fff;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  white-space: normal;      /* MAG WRAPPEN op kleine schermen */
-  max-width: 90vw;          /* tekst mag afbreken binnen viewport */
-  text-align: center;       /* midden uitlijnen */
-  line-height: 1.4;
+  white-space: normal;
+  max-width: 90vw;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 10px; /* extra ruimte voor mobiel */
 }
 
-/* Mobile fine-tune zodat tekst niet forceert naar breedte > viewport */
+/* Mobiele verbeteringen voor leesbaarheid */
 @media (max-width: 480px) {
   .text-slider span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 0 20px;
   }
 }
+
 
 .text-slider span.visible {
   opacity: 1;
