@@ -80,19 +80,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Tekstslider met smooth fade animatie
+  // Tekstslider met fade animatie – met aparte teksten voor mobiel
   const textSlider = document.querySelector('.text-slider');
   if (textSlider) {
+    const isMobile = window.innerWidth < 768;
+
+    const desktopTexts = [
+      "Van espresso tot iced latte – altijd to go, altijd Café8.",
+      "Matcha of cappuccino – jouw momentje bij Café8.",
+      "Altijd vers, altijd met een glimlach."
+    ];
+
+    const mobileTexts = [
+      "Espresso tot iced latte.",
+      "Matcha of cappuccino.",
+      "Altijd vers, met een glimlach."
+    ];
+
     const spans = textSlider.querySelectorAll('span');
+    const texts = isMobile ? mobileTexts : desktopTexts;
+
     let index = 0;
 
     function showNextText() {
       spans.forEach(span => span.classList.remove('visible'));
+      spans[index].textContent = texts[index];
       spans[index].classList.add('visible');
-      index = (index + 1) % spans.length;
+      index = (index + 1) % texts.length;
     }
 
-    // Start animatie
+    // Start slider
     showNextText();
     setInterval(showNextText, 4000);
   }
