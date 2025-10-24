@@ -472,36 +472,31 @@ p { animation-delay: 0.5s; }
 .contact-info { animation-delay: 0.4s; }
 .contact-left form { animation-delay: 0.5s; }
 
-/* === Tekst Slider Sectie (meerdere teksten na elkaar) === */
+/* === Smooth tekstwissel voor slogansectie === */
 .text-slider-section {
   background-color: #232822;
-  padding: 25px 0;
   text-align: center;
+  padding: 20px 0;
   overflow: hidden;
   position: relative;
-}
-
-.text-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  color: #fff;
-  height: 50px; /* iets meer ruimte */
-  overflow: hidden;
 }
 
 .text-slider span {
-  position: absolute;
-  width: 100%;
-  text-align: center;
+  display: inline-block;
   opacity: 0;
-  animation: fadeInOut 18s ease-in-out infinite; /* 3 zinnen x 6s */
-  transform: translateY(0);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.text-slider span.visible {
+  opacity: 1;
+  position: relative;
 }
 
 /* Zorg dat elke zin een eigen startmoment heeft */
@@ -520,28 +515,6 @@ p { animation-delay: 0.5s; }
   0%, 8% { opacity: 0; transform: translateY(20px); }
   10%, 30% { opacity: 1; transform: translateY(0); }
   33%, 100% { opacity: 0; transform: translateY(-20px); }
-}
-
-/* === Smooth tekstwissel voor slogansectie === */
-.text-slider-section {
-  background-color: #232822;
-  text-align: center;
-  padding: 20px 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.text-slider span {
-  display: inline-block;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
-  color: #fff;
-  opacity: 0;
-  transition: opacity 1.5s ease;
-}
-
-.text-slider span.visible {
-  opacity: 1;
 }
 
 /* === Footer Sectie === */
