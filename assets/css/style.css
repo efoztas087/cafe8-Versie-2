@@ -854,3 +854,36 @@ p { animation-delay: 0.5s; }
     margin-left: auto;
     margin-right: auto;
   }
+/* === Fix tegen horizontaal scrollen op mobiel === */
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.text-slider-section,
+.text-slider {
+  overflow: hidden;
+}
+
+.text-slider span {
+  max-width: 95vw;
+  white-space: normal;
+}
+
+.location-gallery,
+.location-gallery img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header-container,
+.location-wrapper,
+.contact-left {
+  max-width: 100vw;
+  overflow: hidden;
+}
