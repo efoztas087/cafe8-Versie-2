@@ -522,6 +522,28 @@ p { animation-delay: 0.5s; }
   33%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 
+/* === Smooth tekstwissel voor slogansectie === */
+.text-slider-section {
+  background-color: #232822;
+  text-align: center;
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-slider span {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.text-slider span.visible {
+  opacity: 1;
+}
+
 /* === Footer Sectie === */
 .contact-section {
   background-color: #3c4639;

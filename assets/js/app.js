@@ -80,25 +80,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Tekstslider
-  const texts = [
-    "Van espresso tot iced latte – altijd to go, altijd Café8.",
-    "Matcha of cappuccino – jouw momentje bij Café8.",
-    "Altijd vers, altijd met een glimlach."
-  ];
+  // Tekstslider met smooth fade animatie
   const textSlider = document.querySelector('.text-slider');
   if (textSlider) {
+    const spans = textSlider.querySelectorAll('span');
     let index = 0;
-    function changeText() {
-      textSlider.style.opacity = 0;
-      setTimeout(() => {
-        textSlider.textContent = texts[index];
-        textSlider.style.opacity = 1;
-        index = (index + 1) % texts.length;
-      }, 600);
+
+    function showNextText() {
+      spans.forEach(span => span.classList.remove('visible'));
+      spans[index].classList.add('visible');
+      index = (index + 1) % spans.length;
     }
-    changeText();
-    setInterval(changeText, 4000);
+
+    // Start animatie
+    showNextText();
+    setInterval(showNextText, 4000);
   }
 
   // Contactformulier functionaliteit
